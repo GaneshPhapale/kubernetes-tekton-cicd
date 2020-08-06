@@ -11,7 +11,7 @@
   
   The docker login command will store the credential in default configuration file /root/.docker/config.json
   
- 3. Also you need to create secret for pull reference in case of your private dockerhub registery. To crreate it use:
+ 3. Also you need to create secret for pull reference in case of your private dockerhub registery. To create it use:
   
     $ kubectl create secret generic <your-secret-name> \
       --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
