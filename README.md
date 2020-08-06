@@ -36,6 +36,9 @@
    
    You will see the your application is running and you can access it.
    To access your application, run:
+   
    $ kubectl get all
+   
    See the service node port and access it using ip:nodeport.
+   
    You will see the hello from application.   
