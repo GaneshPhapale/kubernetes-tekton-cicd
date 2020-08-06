@@ -35,3 +35,5 @@ spec:
           image: <your-dockerhub-repository-name:image-tagname>
           ports:
           - containerPort: 3300
+       imagePullSecrets:
+         - name: <your-created-secret-name>
