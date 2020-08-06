@@ -17,7 +17,7 @@
       --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
       --type=kubernetes.io/dockerconfigjson
     
-    # NOTE: You need to create secret with command line like shown in above or use dockerhub-credential.yaml to create seceret. Use on both of them.
+    NOTE: You need to create secret with command line like shown in above or use dockerhub-credential.yaml to create seceret. Use on both of them.
     
     NOTE: You need to replace your given secret name in pipeline service account in "service-account.yaml" file.
     
