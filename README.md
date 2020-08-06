@@ -27,7 +27,15 @@
     
 #  Executing Pipleine
   
-   Before executing the pipeline, you need to provide proper image value in "deploy.yaml" file, which is under src folder.You need to update image parameter with your repository     name and proper tag given in the pipeline. Here pipeline executes with tag "0.0.1". You can see value in pipeline-run.yaml file. Also you need to povide youe git source code url in "git-resource.yaml" file and the image url (your dockerhub repository name) in the "image-reources.yaml" and "pipeline-run.yaml" file
+   Before executing the pipeline, you need to provide proper image value in "deploy.yaml" file, which is under src folder. You need to update image parameter with your repository name and proper tag given in the pipeline. Here pipeline executes with tag "0.0.1". You can see value in pipeline-run.yaml file. Also if you want to build another code then you need to provide your git source code url in "git-resource.yaml" file. You also need to specify the image url (your dockerhub repository name) in the "image-reources.yaml" and "pipeline-run.yaml" file
    
    To exceute, create pipelineresource, task, pipleine, piplinerun using kubectl create -f command respectively.
    Wait for the pipeline to be fully executed.
+   
+   # Result
+   
+   You will see the your application is running and you can access it.
+   To access your application, run:
+   $ kubectl get all
+   See the service node port and access it using ip:nodeport.
+   You will see the hello from application.   
