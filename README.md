@@ -27,7 +27,7 @@
     
 #  Executing Pipleine
   
-   Before executing the pipeline, you need to provide proper image value in deploy.yaml file, which is under src folder.You need to update image parameter with your repository     name and proper tag given in the pipeline. Here pipeline executes with tag "0.0.1". You can see value in pipeline-run.yaml file. Also you need to povide youe git source code url in "git-resource.yaml" file and the image url (your dockerhub repository name) in the "image-reources.yaml" and "pipeline-run.yaml" file
+   Before executing the pipeline, you need to provide proper image value in "deploy.yaml" file, which is under src folder.You need to update image parameter with your repository     name and proper tag given in the pipeline. Here pipeline executes with tag "0.0.1". You can see value in pipeline-run.yaml file. Also you need to povide youe git source code url in "git-resource.yaml" file and the image url (your dockerhub repository name) in the "image-reources.yaml" and "pipeline-run.yaml" file
    
    To exceute, create pipelineresource, task, pipleine, piplinerun using kubectl create -f command respectively.
    Wait for the pipeline to be fully executed.
