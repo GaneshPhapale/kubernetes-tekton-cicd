@@ -1,4 +1,4 @@
-# This is CICD of simple hello app for tekton pipelines on kubernets or on openshift container platform 4.x.
+# This is CICD of simple hello app for tekton pipelines on Kubernetes or on Openshift Container Platform 4.x.
 
 # Prerequisite
 
