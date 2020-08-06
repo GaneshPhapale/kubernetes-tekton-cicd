@@ -39,6 +39,6 @@
    
    $ kubectl get all
    
-   See the service node port and access it using ip:nodeport.
+   See the service node port and access it using ip:nodeport
    
    You will see the hello from application.   
