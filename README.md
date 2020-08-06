@@ -16,8 +16,8 @@
     --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
     --type=kubernetes.io/dockerconfigjson
     
-    Here  --from-file option is path to docker configuration file. The default path is:
-    # /root/.docker/config.json
+    NOTE: You need to replace your given secret name in pipeline service account in "service-account.yaml" file.
+    Here  --from-file option is path to docker configuration file. The default path is: /root/.docker/config.json
     
     
     
