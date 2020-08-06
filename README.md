@@ -7,14 +7,15 @@
   
  2. As we use dockerhub for image registery you need to login into the docker using command:
   
-  $ docker login
+    $ docker login
   
   The docker login command will store the credential in default configuration file /root/.docker/config.json
   
  3. Also you need to create secret for pull reference in case of your private dockerhub registery. To crreate it use:
-  $ kubectl create secret generic <your-secret-name> \
-    --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
-    --type=kubernetes.io/dockerconfigjson
+  
+    $ kubectl create secret generic <your-secret-name> \
+      --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
+      --type=kubernetes.io/dockerconfigjson
     
     NOTE: You need to create secret with command line like shown in above or use dockerhub-credential.yaml to create seceret. Use on both of them.
     NOTE: You need to replace your given secret name in pipeline service account in "service-account.yaml" file.
@@ -22,7 +23,7 @@
     
     
     
-# Executing Pipleine
+#  Executing Pipleine
   
-  To exceute, create pipelineresource, task, pipleine, piplinerun using kubectl create -f command respectively.
-  Wait for the pipeline to be fully executed.
+   To exceute, create pipelineresource, task, pipleine, piplinerun using kubectl create -f command respectively.
+   Wait for the pipeline to be fully executed.
