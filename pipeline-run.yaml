@@ -18,7 +18,7 @@ spec:
     - name: pathToYamlFile
       value: "deploy.yaml"
     - name: "imageUrl"
-      value: "060696/app"
+      value: "<docker-hub-repository-name>"
     - name: "imageTag"
       value: "0.0.1"
   serviceAccountName: service-account
