@@ -17,7 +17,7 @@
     
     NOTE: You need to create secret with command line like shown in above or use dockerhub-credential.yaml to create seceret. Use on both of them.
     
-    NOTE: You need to replace your given secret name in pipeline service account in "service-account.yaml" file.
+    NOTE: You need to replace your given secret name in pipeline service account in "service-account.yaml" file and under the imagrPullSecrets parameter in "deploy.yaml" file which is under thr src folder.
     
     Here  --from-file option is path to docker configuration file. The default path is: /root/.docker/config.json
     
