@@ -2,7 +2,7 @@
 
 # Prerequisite
 
- 1. As you need tekton in install on your kubernetes/openshift enviornment.
+ 1. As you need tekton is install on your kubernetes/openshift enviornment.
     To setup it on kubernetes, follow: https://github.com/tektoncd/pipeline/blob/master/docs/install.md
   
  2. As we use dockerhub for image registery you need to login into the docker using command:
