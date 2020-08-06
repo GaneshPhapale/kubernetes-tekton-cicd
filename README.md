@@ -13,7 +13,7 @@
   
  3. Also you need to create secret for pull reference in case of your private dockerhub registery. To create it use:
   
-    $ kubectl create secret generic <your-secret-name> --from-file=.dockerconfigjson=<path/to/.docker/config.json> --type=kubernetes.io/dockerconfigjson
+    $ kubectl create secret generic "your-secret-name" --from-file=.dockerconfigjson=<path/to/.docker/config.json> --type=kubernetes.io/dockerconfigjson
     
     NOTE: You need to create secret with command line like shown in above or use dockerhub-credential.yaml to create seceret. Use on both of them.
     
