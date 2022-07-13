@@ -1,7 +1,7 @@
 const app = require('express')()
 
 app.get('/', (req, res) => {
-  res.send("Hello from DATAMATO!");
+  res.send("Hello from Ganesh!");
 });
 
 var port = 3300;
